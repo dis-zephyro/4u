@@ -1,0 +1,247 @@
+@font-face {
+	font-family: 'Impact';
+	src: url('../fonts/5200.eot?') format('eot'),
+	url('../fonts/5200.woff') format('woff'),
+	url('../fonts/5200.ttf')  format('truetype'),
+	url('../fonts/5200.svg#svgFontName') format('svg');
+}
+
+
+@import "mixing.less";
+
+/* Base styles
+   ========================= */
+
+* {
+	webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+html {
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+.container {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+
+
+.portfolio {
+	height: 950px;
+	overflow: hidden;
+	position: relative;
+	background: url("../image/portfolio_bg_01.jpg") top center no-repeat;
+
+	webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+
+	.portfolio-polygon {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 10;
+		position: absolute;
+
+
+		&.polygon01 {
+			background: url("../image/polygon01.png") top center no-repeat;
+		}
+
+		&.polygon02 {
+			background: url("../image/polygon02.png") top center no-repeat;
+		}
+
+		&.polygon03 {
+			background: url("../image/polygon03.png") top center no-repeat;
+		}
+	}
+
+
+
+	.container {
+		height: 100%;
+		z-index: 100;
+	}
+
+	.portfolio-box {
+		width: 375px;
+		color: #cccccc;
+		font-size: 16px;
+		position: absolute;
+		background: url("../image/portfolio-box-pattern.png");
+
+		.portfolio-box-inner {
+			width: 100%;
+			padding: 25px 30px;
+			position: relative;
+
+			&:before {
+				width: 92px;
+				height: 40px;
+				content: " ";
+				position: absolute;
+			}
+		}
+
+		&.box-left {
+			left: 0;
+			top: 72px;
+
+			.portfolio-box-inner {
+
+				&:before {
+					top: 64px;
+					left: 375px;
+					background: url("../image/portfolio-box-left.png") 0 0 no-repeat;
+				}
+			}
+		}
+
+		&.box-right {
+			right: 0;
+			bottom: 360px;
+
+			.portfolio-box-inner {
+
+				&:before {
+					top: 64px;
+					left: -92px;
+					background: url("../image/portfolio-box-right.png") 0 0 no-repeat;
+				}
+			}
+		}
+
+		.portfolio-box-title {
+			color: #fff;
+			font-size: 24px;
+			line-height: 30px;
+			margin-bottom: 10px;
+			font-family: 'Impact';
+		}
+	}
+
+	.portfolio-detail {
+		left: 80px;
+		right: 70px;
+		bottom: 175px;
+		position: absolute;
+
+		.skills {
+			margin: 0;
+			padding: 0;
+			float: left;
+			list-style: none;
+
+			li {
+				float: left;
+				margin-right: 29px;
+				background: url("../image/portfolio-sprite.png") no-repeat;
+
+				&.item1 {
+					width: 68px;
+					height: 71px;
+					background-position: 0 0;
+				}
+
+				&.item2 {
+					width: 71px;
+					height: 71px;
+					background-position: -97px 0;
+				}
+
+				&.item3 {
+					width: 70px;
+					height: 71px;
+					background-position: -193px 0;
+				}
+
+				&.item4 {
+					width: 71px;
+					height: 71px;
+					background-position: -290px 0;
+				}
+
+				&.item5 {
+					width: 68px;
+					height: 71px;
+					background-position: -387px 0;
+				}
+			}
+		}
+
+		.portfolio-view {
+			color: #fff;
+			float: right;
+			width: 309px;
+			height: 48px;
+			outline: none;
+			display: block;
+			cursor: pointer;
+			font-size: 20px;
+			line-height: 30px;
+			font-family: 'Impact';
+			text-decoration: none;
+			padding: 9px 50px 9px 25px;
+			text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.35);
+			background: url("../image/portfolio-sprite.png") 0 -90px no-repeat;
+
+			&:active {
+				top: 1px;
+				position: relative;
+			}
+		}
+	}
+
+	.portfolio-scroll {
+		left: 50%;
+		bottom: 40px;
+		width: 16px;
+		height: 50px;
+		cursor: pointer;
+		margin-left: -8px;
+		position: absolute;
+		background: url("../image/icon-scroll.png") 0 0 no-repeat;
+	}
+}
+
+/* Typography
+   ========================= */
+
+h1, h2, h3, h4 {
+
+}
+
+p {
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+a {
+
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.text-right {
+	text-align: center;
+}
