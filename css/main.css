@@ -105,23 +105,6 @@ html {
   -moz-box-sizing: border-box !important;
   box-sizing: border-box !important;
 }
-.portfolio .portfolio-polygon {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  position: absolute;
-}
-.portfolio .portfolio-polygon.polygon01 {
-  background: url("../image/polygon01.png") top center no-repeat;
-}
-.portfolio .portfolio-polygon.polygon02 {
-  background: url("../image/polygon02.png") top center no-repeat;
-}
-.portfolio .portfolio-polygon.polygon03 {
-  background: url("../image/polygon03.png") top center no-repeat;
-}
 .portfolio .container {
   height: 100%;
   z-index: 100;
@@ -240,6 +223,155 @@ html {
   margin-left: -8px;
   position: absolute;
   background: url("../image/icon-scroll.png") 0 0 no-repeat;
+}
+.portfolio-slider {
+  height: 950px;
+  overflow: hidden;
+  position: relative;
+  background: url("../image/slider_bg.jpg") top center no-repeat;
+  webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+.portfolio-slider .container {
+  height: 100%;
+  z-index: 100;
+  padding-top: 148px;
+}
+.portfolio-slider .slider {
+  height: 630px;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio-slider .slider .slider-item {
+  color: #fff;
+  float: left;
+  width: 100%;
+  height: 630px;
+  padding-top: 90px;
+  position: relative;
+}
+.portfolio-slider .slider .slider-item.item1 {
+  background: url("../image/slide_01.png") top center no-repeat;
+}
+.portfolio-slider .slider .slider-item.item2 {
+  background: url("../image/slide_02.png") top center no-repeat;
+}
+.portfolio-slider .slider .slider-item.item3 {
+  background: url("../image/slide_03.png") top center no-repeat;
+}
+.portfolio-slider .slider .slider-item.item4 {
+  background: url("../image/slide_04.png") top center no-repeat;
+}
+.portfolio-slider .slider .slider-item.item5 {
+  background: url("../image/slide_05.png") top center no-repeat;
+}
+.portfolio-slider .slider .slider-title {
+  color: #fff;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: 'Impact';
+  margin: 0 140px 20px 520px;
+}
+.portfolio-slider .slider .slider-text {
+  color: #cccccc;
+  font-size: 16px;
+  margin: 0 140px 0 520px;
+}
+.portfolio-slider .slider-detail {
+  bottom: 0;
+  left: 80px;
+  right: 70px;
+  position: absolute;
+}
+.portfolio-slider .slider-detail .skills {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+}
+.portfolio-slider .slider-detail .skills li {
+  float: left;
+  margin-right: 29px;
+  background: url("../image/portfolio-sprite.png") no-repeat;
+}
+.portfolio-slider .slider-detail .skills li.item1 {
+  width: 68px;
+  height: 71px;
+  background-position: 0 0;
+}
+.portfolio-slider .slider-detail .skills li.item2 {
+  width: 71px;
+  height: 71px;
+  background-position: -97px 0;
+}
+.portfolio-slider .slider-detail .skills li.item3 {
+  width: 70px;
+  height: 71px;
+  background-position: -193px 0;
+}
+.portfolio-slider .slider-detail .skills li.item4 {
+  width: 71px;
+  height: 71px;
+  background-position: -290px 0;
+}
+.portfolio-slider .slider-detail .skills li.item5 {
+  width: 68px;
+  height: 71px;
+  background-position: -387px 0;
+}
+.portfolio-slider .slider-detail .slider-view {
+  color: #fff;
+  float: right;
+  width: 309px;
+  height: 48px;
+  outline: none;
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'Impact';
+  text-decoration: none;
+  padding: 9px 50px 9px 25px;
+  text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.35);
+  background: url("../image/portfolio-sprite.png") 0 -90px no-repeat;
+}
+.portfolio-slider .slider-detail .slider-view:active {
+  top: 1px;
+  position: relative;
+}
+.portfolio-slider .slider-nav {
+  top: 450px;
+  width: 37px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  background: url("../image/slider-nav.png") no-repeat;
+}
+.portfolio-slider .slider-nav.prev {
+  left: 0;
+  background-position: 0 0;
+}
+.portfolio-slider .slider-nav.next {
+  right: 0;
+  background-position: -37px 0;
+}
+.portfolio-polygon {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  position: absolute;
+}
+.portfolio-polygon.polygon01 {
+  background: url("../image/polygon01.png") top center no-repeat;
+}
+.portfolio-polygon.polygon02 {
+  background: url("../image/polygon02.png") top center no-repeat;
+}
+.portfolio-polygon.polygon03 {
+  background: url("../image/polygon03.png") top center no-repeat;
 }
 /* Typography
    ========================= */

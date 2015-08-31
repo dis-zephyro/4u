@@ -1,3 +1,22 @@
+//  слайдер
+
+$('.slider').slick({
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+});
+
+$('.prev').click(function(){
+    $('.slider').slick('slickPrev');
+});
+
+$('.next').click(function(){
+    $('.slider').slick('slickNext');
+});
+
+
+
 /* Анимация  */
 
 document.body.onmousemove=function(e) {
@@ -63,5 +82,28 @@ function do_parallax(mouse_x, mouse_y) {
     elem.style.top=shift2+'px';
 
 
+    // Вертикальный и горизонтальный сдвиг для первого слоя
+    shift1=Math.round(sh_1*mouse_x*2/body.clientWidth);
+    shift2=Math.round(10*mouse_y*20/body.clientHeight);
 
+    elem=document.getElementById('polygon04');
+    elem.style.left=shift1+'px';
+    elem.style.top=shift2+'px';
+
+    // Вертикальный и горизонтальный сдвиг для второго слоя
+    shift1=-Math.round(sh_2*mouse_x/body.clientWidth);
+    shift2=Math.round(mouse_y*10/body.clientHeight);
+
+    elem=document.getElementById('polygon05');
+    elem.style.left=shift1+'px';
+    elem.style.top=shift2+'px';
+
+
+    // Вертикальный и горизонтальный сдвиг для третьего слоя
+    shift1=Math.round(80*mouse_x/body.clientWidth);
+    shift2=Math.round(5*mouse_y*10/body.clientHeight);
+
+    elem=document.getElementById('polygon06');
+    elem.style.left=shift1+'px';
+    elem.style.top=shift2+'px';
 }
