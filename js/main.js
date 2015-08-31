@@ -2,7 +2,7 @@
 
 $('.slider').slick({
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 1,
     slidesToScroll: 1
 });
@@ -13,7 +13,24 @@ $('.prev').click(function(){
 
 $('.next').click(function(){
     $('.slider').slick('slickNext');
+
 });
+
+// Показ слайдов при наведении
+
+$('.skills li.item1').mouseover(function() {
+    var box = $(this).closest('.slider-item');
+    var check = box.find('.portfolio-item');
+    console.log(check);
+    check.show();
+});
+
+$('.skills li.item1').mouseout(function() {
+    var box = $(this).closest('.slider-item');
+    var check = box.find('.portfolio-item');
+    check.hide();
+});
+
 
 
 
