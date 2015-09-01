@@ -309,10 +309,12 @@ html {
 }
 .portfolio .slider-nav.prev {
   left: 0;
+  z-index: 10;
   background-position: 0 0;
 }
 .portfolio .slider-nav.next {
   right: 0;
+  z-index: 10;
   background-position: -37px 0;
 }
 .portfolio-polygon {

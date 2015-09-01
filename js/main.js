@@ -23,12 +23,14 @@ $('.skills li.item1').mouseover(function() {
     var check = box.find('.portfolio-item');
     console.log(check);
     check.show();
+    $('.portfolio-nav').hide();
 });
 
 $('.skills li.item1').mouseout(function() {
     var box = $(this).closest('.slider-item');
     var check = box.find('.portfolio-item');
     check.hide();
+    $('.portfolio-nav').show();
 });
 
 
@@ -98,29 +100,4 @@ function do_parallax(mouse_x, mouse_y) {
     elem.style.left=shift1+'px';
     elem.style.top=shift2+'px';
 
-
-    // Вертикальный и горизонтальный сдвиг для первого слоя
-    shift1=Math.round(sh_1*mouse_x*2/body.clientWidth);
-    shift2=Math.round(10*mouse_y*20/body.clientHeight);
-
-    elem=document.getElementById('polygon04');
-    elem.style.left=shift1+'px';
-    elem.style.top=shift2+'px';
-
-    // Вертикальный и горизонтальный сдвиг для второго слоя
-    shift1=-Math.round(sh_2*mouse_x/body.clientWidth);
-    shift2=Math.round(mouse_y*10/body.clientHeight);
-
-    elem=document.getElementById('polygon05');
-    elem.style.left=shift1+'px';
-    elem.style.top=shift2+'px';
-
-
-    // Вертикальный и горизонтальный сдвиг для третьего слоя
-    shift1=Math.round(80*mouse_x/body.clientWidth);
-    shift2=Math.round(5*mouse_y*10/body.clientHeight);
-
-    elem=document.getElementById('polygon06');
-    elem.style.left=shift1+'px';
-    elem.style.top=shift2+'px';
 }
