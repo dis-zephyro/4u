@@ -18,21 +18,63 @@ $('.next').click(function(){
 
 // Показ слайдов при наведении
 
+// 1
+
 $('.skills li.item1').mouseover(function() {
     var box = $(this).closest('.slider-item');
-    var check = box.find('.portfolio-item');
+    var check = box.find('.portfolio-item01');
     console.log(check);
     check.show();
     $('.portfolio-nav').hide();
 });
 
-$('.skills li.item1').mouseout(function() {
+// 2
+
+$('.skills li.item2').mouseover(function() {
+    var box = $(this).closest('.slider-item');
+    var check = box.find('.portfolio-item03');
+    console.log(check);
+    check.show();
+    $('.portfolio-nav').hide();
+});
+
+
+// 3
+
+$('.skills li.item3').mouseover(function() {
+    var box = $(this).closest('.slider-item');
+    var check = box.find('.portfolio-item03');
+    console.log(check);
+    check.show();
+    $('.portfolio-nav').hide();
+});
+
+// 4
+
+$('.skills li.item4').mouseover(function() {
+    var box = $(this).closest('.slider-item');
+    var check = box.find('.portfolio-item04');
+    console.log(check);
+    check.show();
+    $('.portfolio-nav').hide();
+});
+
+// 4
+
+$('.skills li.item5').mouseover(function() {
+    var box = $(this).closest('.slider-item');
+    var check = box.find('.portfolio-item05');
+    console.log(check);
+    check.show();
+    $('.portfolio-nav').hide();
+});
+
+$('.skills li').mouseout(function() {
     var box = $(this).closest('.slider-item');
     var check = box.find('.portfolio-item');
     check.hide();
     $('.portfolio-nav').show();
 });
-
 
 
 
@@ -71,7 +113,7 @@ function do_parallax(mouse_x, mouse_y) {
     var shift1, shift2, elem;
 
     // Пропорциональные коэффициенты сдвига для слоев
-    var sh_1=100;
+    var sh_1=10;
     var sh_2=50;
 
 
