@@ -252,25 +252,40 @@ html {
   height: 71px;
   background-position: 0 0;
 }
+.portfolio .slider-detail .skills li.item1:hover {
+  background-position: 0 -150px;
+}
 .portfolio .slider-detail .skills li.item2 {
   width: 71px;
   height: 71px;
   background-position: -97px 0;
+}
+.portfolio .slider-detail .skills li.item2:hover {
+  background-position: -97px -150px;
 }
 .portfolio .slider-detail .skills li.item3 {
   width: 70px;
   height: 71px;
   background-position: -193px 0;
 }
+.portfolio .slider-detail .skills li.item3:hover {
+  background-position: -193px -150px;
+}
 .portfolio .slider-detail .skills li.item4 {
   width: 71px;
   height: 71px;
   background-position: -290px 0;
 }
+.portfolio .slider-detail .skills li.item4:hover {
+  background-position: -290px -150px;
+}
 .portfolio .slider-detail .skills li.item5 {
   width: 68px;
   height: 71px;
   background-position: -387px 0;
+}
+.portfolio .slider-detail .skills li.item5:hover {
+  background-position: -387px -150px;
 }
 .portfolio .slider-detail .slider-view {
   color: #fff;
