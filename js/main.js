@@ -1,3 +1,9 @@
+$(".btn-popup").fancybox({
+    'padding' : 0,
+    'closeBtn' : false
+});
+
+
 //  слайдер
 
 $('.slider').slick({
@@ -7,11 +13,11 @@ $('.slider').slick({
     slidesToScroll: 1
 });
 
-$('.prev').click(function(){
+$('.portfolio-nav .prev').click(function(){
     $('.slider').slick('slickPrev');
 });
 
-$('.next').click(function(){
+$('.portfolio-nav .next').click(function(){
     $('.slider').slick('slickNext');
 
 });

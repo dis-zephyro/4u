@@ -2,6 +2,14 @@
   font-family: 'Impact';
   src: url('../fonts/5200.eot?') format('eot'), url('../fonts/5200.woff') format('woff'), url('../fonts/5200.ttf') format('truetype'), url('../fonts/5200.svg#svgFontName') format('svg');
 }
+@font-face {
+  font-family: 'helveticaneuecyr-light';
+  src: url('../fonts/helveticaneuecyr-light-webfont.eot?') format('eot'), url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'), url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype'), url('../fonts/helveticaneuecyr-light-webfont.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Roman';
+  src: url('../fonts/HelveticaNeueCyr-Roman.eot?') format('eot'), url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Roman.svg#svgFontName') format('svg');
+}
 /* Helper classes
    ========================= */
 .ir {
@@ -350,11 +358,249 @@ html {
 .portfolio-polygon.polygon03 {
   background: url("../image/polygon03.png") top center no-repeat;
 }
+.block01 {
+  height: 950px;
+  background: url("../image/block01_bg.jpg") top center no-repeat;
+  webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+.block01 .container {
+  height: 100%;
+  padding-top: 260px;
+}
+.block01 .logo {
+  top: 0;
+  left: 0;
+  width: 186px;
+  height: 177px;
+  position: absolute;
+  background: url("../image/4u_logo.png") 0 0 no-repeat;
+}
+.block01 .top-contact {
+  top: 0;
+  right: 0;
+  width: 450px;
+  text-align: right;
+  position: absolute;
+  padding-top: 19px;
+}
+.block01 .top-phone {
+  height: 56px;
+  color: #0f0f0f;
+  font-size: 46px;
+  line-height: 56px;
+  font-family: 'Impact';
+  padding-left: 80px;
+  margin-bottom: 25px;
+  display: inline-block;
+  background: url("../image/icon-phone.png") left center no-repeat;
+}
+.block01 h1 {
+  padding: 0;
+  height: 76px;
+  width: 1110px;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0 auto 30px auto;
+  background: url("../image/block01_title.png") top center no-repeat;
+}
+.block01 .text {
+  width: 850px;
+  height: 31px;
+  margin: 0 auto 30px auto;
+  background: url("../image/block01_text.png") top center no-repeat;
+}
+.block01 .btn-play-inner {
+  width: 440px;
+  height: 340px;
+  margin-left: 430px;
+  position: relative;
+  padding: 50px 140px 0 70px;
+  background: url("../image/btn-play.png") 0 0 no-repeat;
+}
+.block01 .btn-play-inner .btn-play {
+  width: 100%;
+  height: 100%;
+  color: #242424;
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  padding-top: 260px;
+  font-family: 'Impact';
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.block01 .btn-scroll {
+  left: 50%;
+  bottom: 40px;
+  width: 16px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: -8px;
+  position: absolute;
+  background: url("../image/btn-scroll.png") 0 0 no-repeat;
+}
+.block_contact {
+  height: 950px;
+  background: url("../image/block_contact_bg.jpg") top center no-repeat;
+}
+.block_contact .container {
+  height: 100%;
+}
+.block_contact .form-box {
+  width: 522px;
+  margin: 0 auto;
+  padding-top: 230px;
+}
+.block_contact .logo {
+  left: 0;
+  bottom: 0;
+  width: 263px;
+  height: 164px;
+  position: absolute;
+  background: url("../image/contact-logo.png") 0 0 no-repeat;
+}
+.block_contact .text {
+  left: 0;
+  right: 0;
+  bottom: 70px;
+  color: #404040;
+  font-size: 14px;
+  position: absolute;
+  font-family: 'HelveticaNeueCyr-Roman';
+}
+.block_contact .politic {
+  color: #e5282b;
+  text-decoration: underline;
+}
+.block_contact .politic:hover {
+  text-decoration: none;
+}
+.btn {
+  color: #fff;
+  width: 413px;
+  height: 64px;
+  border: none;
+  outline: none;
+  font-size: 27px;
+  line-height: 44px;
+  position: relative;
+  font-family: 'Impact';
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 155px 10px 50px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.35);
+  background: url("../image/sprite.png") 0 0 no-repeat;
+}
+.btn:hover {
+  background-position: 0 -64px;
+}
+.btn:active {
+  top: 1px;
+}
+.video-inner {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  border: 1px solid #ccc;
+}
+.video-inner iframe,
+.video-inner object,
+.video-inner embed {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.popup-box {
+  width: 800px;
+  height: auto;
+}
+.cform ol {
+  margin: 0;
+  list-style: none;
+  padding: 0 0 50px 0;
+}
+.cform li {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.cform li:nth-child(1) input[type="text"] {
+  background-position: 0 -101px;
+}
+.cform li:nth-child(2) input[type="text"] {
+  background-position: 0 -202px;
+}
+.cform li:nth-child(3) input[type="text"] {
+  background-position: 0 -303px;
+}
+.cform label {
+  display: none;
+}
+.cform input[type="text"] {
+  margin: 0;
+  width: 522px;
+  height: 101px;
+  border: none;
+  outline: none;
+  color: #0f0f0f;
+  display: block;
+  overflow: hidden;
+  font-size: 36px;
+  text-align: left;
+  line-height: 41px;
+  font-family: 'helveticaneuecyr-light';
+  padding: 30px 15px 30px 110px;
+  background: transparent url("../image/form-pattern.png") 0 0 no-repeat;
+}
+.cform input[type="text"]:focus {
+  background-color: rgba(145, 145, 145, 0.1);
+}
+.cform p {
+  text-align: center;
+}
+.sendbutton {
+  color: #fff;
+  width: 413px;
+  height: 64px;
+  border: none;
+  outline: none;
+  font-size: 27px;
+  line-height: 44px;
+  position: relative;
+  font-family: 'Impact';
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 155px 10px 50px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.35);
+  background: url("../image/sprite.png") 0 0 no-repeat;
+}
+.sendbutton:hover {
+  background-position: 0 -64px;
+}
+.sendbutton:active {
+  top: 1px;
+}
 /* Typography
    ========================= */
 p {
   padding: 0;
   margin: 0 0 10px 0;
+}
+a {
+  color: #e5282b;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
 }
 nav ul {
   margin: 0;

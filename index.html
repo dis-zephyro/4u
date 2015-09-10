@@ -9,10 +9,35 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="js/vendor/slick/slick.css">
+        <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     
     <body>
+        <section class="block01">
+            <div class="container">
+                <div class="logo"></div>
+                <div class="top-contact">
+                    <div class="top-phone">8 800 33 33 766</div>
+                    <a href="#" class="btn btn-phone">Оставить заявку</a>
+                </div>
+
+                <h1 class="ir">Мастерская продающих сайтов</h1>
+                <div class="text ir">увеличиваем продажи через интернет в разы</div>
+                <div class="btn-play-inner">
+                    <a href="#video-box" class="btn-play btn-popup">Посмотрите<br/>видео</a>
+                    <div class="hidden">
+                        <div id="video-box" class="popup-box">
+                            <div class="video-inner">
+                                <iframe src="https://www.youtube.com/embed/xcSv3pzayTg" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn-scroll"></a>
+            </div>
+        </section>
+
         <section class="portfolio">
             <div class="portfolio-polygon polygon01" id="polygon01"></div>
             <div class="portfolio-polygon polygon02" id="polygon02"></div>
@@ -227,9 +252,40 @@
             <a href="#" class="portfolio-scroll"></a>
         </section>
 
+        <section class="block_contact">
+            <div class="container">
+                <div class="form-box">
+                    <form enctype="multipart/form-data" method="post" class="cform mini form">
+                        <ol class="cf-ol">
+                            <li>
+                                <input type="text" name="cf8_field_1" class="single" value="Ваше имя" onfocus="clearField(this)" onblur="setField(this)"/>
+                            </li>
+                            <li>
+                                <input type="text" name="cf8_field_2" class="single" value="Телефон" onfocus="clearField(this)" onblur="setField(this)"/>
+                            </li>
+                            <li>
+                                <input type="text" name="cf8_field_3" class="single" value="E-Mail" onfocus="clearField(this)" onblur="setField(this)"/>
+                            </li>
+                        </ol>
+                        <p class="cf-sb">
+                            <input type="submit" name="sendbutton8" class="sendbutton" value="Отставить заявку" onclick="return cforms_validate('8', false)"/>
+                        </p>
+                    </form>
+                </div>
+                <div class="logo"></div>
+                <div class="text">г. Ульяновск пр-т Западный Бульвар, д.2 <a class="politic" href="#politic">Политика конфиденциальности</a></div>
+                <div class="hidden">
+                    <div id="politic" class="popup-box">
+                        <h2>Политика конфиденциальности</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
         <script src="js/vendor/slick/slick.min.js"></script>
         <script src="js/main.js"></script>
     </body>
