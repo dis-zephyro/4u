@@ -3,6 +3,10 @@ $(".btn-popup").fancybox({
     'closeBtn' : false
 });
 
+$(".politic").fancybox({
+    'padding' : 0
+});
+
 
 //  слайдер
 
